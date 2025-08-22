@@ -67,19 +67,19 @@
 
         lower_layer {
             bindings = <
-  &kp PRINTSCREEN  &none           &kp COMMA       &kp ASTERISK  &kp KP_PLUS           &kp CAPSLOCK     &kp BACKSPACE  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &none  &kp RIGHT_BRACKET
-  &none            &kp LEFT_SHIFT  &kp UNDERSCORE  &kp PERIOD    &kp LEFT_PARENTHESIS  &kp EQUAL        &none          &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &none  &kp RIGHT_ALT
-  &none            &none           &kp N2          &kp N3        &kp MINUS             &kp AMPERSAND    &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none  &kp K_APPLICATION
-                                   &to 3           &none         &none                 &none            &kp LCTRL      &kp LWIN      &kp LEFT_SHIFT  &none
+  &kp PRINTSCREEN     &none           &kp COMMA       &kp ASTERISK  &kp KP_PLUS           &kp CAPSLOCK     &kp BACKSPACE  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &none  &kp RIGHT_BRACKET
+  &kp KP_NUMLOCK      &kp LEFT_SHIFT  &kp UNDERSCORE  &kp PERIOD    &kp LEFT_PARENTHESIS  &kp EQUAL        &none          &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &none  &none
+  &kp K_CONTEXT_MENU  &none           &kp AT_SIGN     &kp HASH      &kp MINUS             &kp AMPERSAND    &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none  &none
+                                      &to 3           &none         &none                 &none            &kp LCTRL      &kp LWIN      &kp LEFT_SHIFT  &none
             >;
         };
 
         raise_layer {
             bindings = <
-  &kp KP_NUM        &none  &mmv MOVE_UP    &none             &none             &none             &kp PG_UP      &kp HOME  &none      &none     &kp F1   &kp F2
-  &none             &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LEFT_WIN      &kp UP_ARROW   &kp LEFT  &kp RIGHT  &kp DOWN  &none    &kp F5
-  &kp LEFT_CONTROL  &none  &none           &none             &none             &none             &kp PAGE_DOWN  &none     &none      &none     &kp F12  &kp F11
-                           &none           &kp LEFT_ALT      &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none          &none     &none      &none
+  &none  &none           &mmv MOVE_DOWN   &mmv MOVE_LEFT  &mmv MOVE_RIGHT   &mmv MOVE_UP      &kp PG_UP      &none     &none      &none     &kp F1   &kp F2
+  &none  &none           &kp LSHFT        &kp LCTRL       &kp LWIN          &kp LALT          &kp UP_ARROW   &kp LEFT  &kp RIGHT  &kp DOWN  &none    &kp F5
+  &none  &msc MOVE_Y(5)  &msc MOVE_Y(-5)  &msc SCRL_DOWN  &msc SCRL_UP      &none             &kp PAGE_DOWN  &none     &none      &none     &kp F12  &kp F11
+                         &none            &none           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none          &none     &none      &none
             >;
         };
 
@@ -89,15 +89,6 @@
   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none        &none  &none  &none  &none  &none
   &none       &none         &none         &none         &none         &none           &none        &none  &none  &none  &none  &none
                             &to 0         &none         &none         &none           &none        &none  &none  &none
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-  &none  &none  &none  &none  &none  &none    &none         &msc MOVE_Y(5)   &none            &none           &none  &none
-  &none  &none  &none  &none  &none  &none    &mmv MOVE_UP  &mmv MOVE_LEFT   &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &none  &none
-  &none  &none  &none  &none  &none  &none    &none         &msc MOVE_Y(-5)  &none            &none           &none  &none
-                &none  &none  &to 0  &none    &none         &none            &none            &none
             >;
         };
     };
