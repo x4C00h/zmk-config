@@ -58,7 +58,7 @@
 
         end2 {
             bindings = <&kp END>;
-            key-positions = <19 20 21>;
+            key-positions = <19 20>;
         };
     };
 
