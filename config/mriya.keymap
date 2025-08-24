@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define LWR 1
@@ -86,10 +85,10 @@
 
         raise_layer {
             bindings = <
-  &none  &none           &mmv MOVE_DOWN   &mmv MOVE_LEFT  &mmv MOVE_RIGHT   &mmv MOVE_UP      &kp PG_UP      &none     &none      &none     &kp F1   &kp F2
-  &none  &none           &kp LSHFT        &kp LCTRL       &kp LWIN          &kp LALT          &kp UP_ARROW   &kp LEFT  &kp RIGHT  &kp DOWN  &none    &kp F5
-  &none  &msc MOVE_Y(5)  &msc MOVE_Y(-5)  &msc SCRL_DOWN  &msc SCRL_UP      &none             &kp PAGE_DOWN  &none     &none      &none     &kp F12  &kp F11
-                         &none            &none           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &none          &none     &none      &none
+  &none             &none  &none      &none         &none      &none             &kp PG_UP      &none     &none      &none     &kp F1   &kp F2
+  &none             &none  &kp LSHFT  &kp LCTRL     &kp LWIN   &kp LALT          &kp UP_ARROW   &kp LEFT  &kp RIGHT  &kp DOWN  &none    &kp F5
+  &kp LEFT_CONTROL  &none  &none      &none         &none      &none             &kp PAGE_DOWN  &none     &none      &none     &kp F12  &kp F11
+                           &none      &kp LEFT_WIN  &kp SPACE  &kp LEFT_SHIFT    &none          &none     &none      &none
             >;
         };
 
