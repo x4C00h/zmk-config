@@ -78,7 +78,7 @@
             bindings = <
   &kp PRINTSCREEN     &none           &kp COMMA       &kp ASTERISK  &kp KP_PLUS           &kp CAPSLOCK     &kp BACKSPACE  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &none  &kp RIGHT_BRACKET
   &kp KP_NUMLOCK      &kp LEFT_SHIFT  &kp UNDERSCORE  &kp PERIOD    &kp LEFT_PARENTHESIS  &kp EQUAL        &none          &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &none  &none
-  &kp K_CONTEXT_MENU  &none           &kp AT_SIGN     &kp HASH      &kp MINUS             &kp AMPERSAND    &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none  &none
+  &kp K_CONTEXT_MENU  &none           &kp AT_SIGN     &kp HASH      &kp MINUS             &kp AMPERSAND    &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none  &kp RIGHT_CONTROL
                                       &to 3           &none         &none                 &none            &kp LCTRL      &kp LWIN      &kp LEFT_SHIFT  &none
             >;
         };
