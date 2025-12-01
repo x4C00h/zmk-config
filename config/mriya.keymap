@@ -50,16 +50,6 @@
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <34 35>;
         };
-
-        home2 {
-            bindings = <&kp HOME>;
-            key-positions = <15 16>;
-        };
-
-        end2 {
-            bindings = <&kp END>;
-            key-positions = <19 20>;
-        };
     };
 
     keymap {
